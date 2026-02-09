@@ -1,0 +1,105 @@
+======================================================================
+BETA-CAROTENE CCD DATA ANALYSIS SUMMARY
+======================================================================
+
+Dataset Shape: 42 experiments × 11 variables
+Target Variable: BetacaroteneDCM
+Number of Features: 10
+
+----------------------------------------------------------------------
+EXPERIMENTAL DESIGN STRUCTURE
+----------------------------------------------------------------------
+Factorial Points (±1):      32
+Axial Points (±α=1.69):     5
+Center Points (0):          0
+Total Experiments:          42
+
+----------------------------------------------------------------------
+RESPONSE VARIABLE STATISTICS
+----------------------------------------------------------------------
+
+Beta-Carotene (DCM Extract) [mg/L]:
+  Mean:        5.102 mg/L
+  Std Dev:     0.684 mg/L
+  Min:         4.187 mg/L
+  Max:         6.685 mg/L
+  Range:       2.498 mg/L
+  Median:      4.827 mg/L
+  CV:          13.41%
+
+======================================================================
+CORRELATION ANALYSIS
+======================================================================
+
+Pearson Correlation with Beta-Carotene Yield:
+----------------------------------------------------------------------
+  2spar               :  0.1865  *
+  ReactorLight        :  0.0733  
+  VitB3               :  0.0231  
+  micronutrients      : -0.4815  **
+  Na2CO3_2            : -0.5820  ***
+  VitC7               :     nan  
+  Asp5                :     nan  
+  8:16                :     nan  
+  Dex3                :     nan  
+  El1                 :     nan  
+
+*** |r| > 0.5 (Strong), ** |r| > 0.3 (Moderate), * |r| > 0.1 (Weak)
+
+======================================================================
+FEATURE IMPORTANCE (LINEAR REGRESSION)
+======================================================================
+
+Standardized Regression Coefficients:
+----------------------------------------------------------------------
+Feature               Coefficient     Effect
+----------------------------------------------------------------------
+Na2CO3_2                  -0.3934   Negative
+micronutrients            -0.3255   Negative
+2spar                      0.1261   Positive
+ReactorLight               0.0495   Positive
+VitB3                      0.0156   Positive
+8:16                       0.0000   Positive
+Asp5                       0.0000   Positive
+VitC7                      0.0000   Negative
+Dex3                       0.0000   Negative
+El1                        0.0000   Negative
+
+Model Performance:
+  R² Score:    0.6112
+  MAE:         0.3440 mg/L
+  RMSE:        0.4216 mg/L
+
+======================================================================
+TOP PERFORMING EXPERIMENTS
+======================================================================
+
+Top 5 Experiments by Beta-Carotene Yield:
+----------------------------------------------------------------------
+
+1. Experiment 4: 6.685 mg/L
+   Active Factors:
+      • 2spar: 1.00
+      • ReactorLight: 1.00
+
+2. Experiment 2: 6.661 mg/L
+   Active Factors:
+      • 2spar: 1.00
+
+3. Experiment 9: 6.361 mg/L
+   Active Factors:
+      • VitB3: 1.00
+
+4. Experiment 10: 6.345 mg/L
+   Active Factors:
+      • 2spar: 1.00
+      • VitB3: 1.00
+
+5. Experiment 11: 6.341 mg/L
+   Active Factors:
+      • VitB3: 1.00
+      • ReactorLight: 1.00
+
+Average of Top 5:     6.479 mg/L
+Overall Average:      5.102 mg/L
+Improvement:          27.0%
